@@ -1,27 +1,38 @@
 <template>
-  <div>
-    <div class="d-flex justify-content-between w-75 flex-wrap m-auto">
+  <div class="container-cards">
+    <div class="card-img">
+      <img
+        :src="`http://image.tmdb.org/t/p/w342/${ObjectMovies.poster_path}`"
+        alt=""
+      />
+    </div>
 
-      <div v-for="(elem, index) in arrayResultApp" :key="index" class="card m-3">
-        <img src="#" class="card-img-top" alt="#" />
-        <div class="card-body overflow-auto">
-          <h5 class="card-title">{{ elem.title }}</h5>
-          <p class="card-text">
-            {{ elem.overview }}
-          </p>
-        </div>
-      </div>
+    <div class="card-content py-5 px-3">
+
+      <div><span> <strong>Titolo: </strong> </span>{{ ObjectMovies.title }}</div>
+      <div><span> <strong>Titolo Originale: </strong> </span>{{ ObjectMovies.original_title }}</div>
+      <div><span> <strong>Lingua: </strong></span>{{ ObjectMovies.original_language }}</div>
+      <div><span> <strong>Voto: </strong></span>{{ ObjectMovies.vote_average }}</div>
       
     </div>
   </div>
 </template>
 
 <script>
+
+
 export default {
+
   name: "CardNetflix",
 
+  data(){
+    return{
+        
+    }
+  },
+
   props: {
-    arrayResultApp: Array,
+    ObjectMovies: Object,
   },
 };
 </script>
@@ -29,9 +40,23 @@ export default {
 
 
 <style lang="scss" scoped>
-.card{
-    
-    width: calc( 100% / 6 );
-    height: 450px;
+  
+.container-cards{
+    width: 342px;
+    margin-right: 20px;
+    padding: 20px;
 }
+
+.card-content{
+    color: white;
+}
+.container-cards:hover .card-img, .card-content{
+   display:none;
+}
+.container-cards:hover .card-content{
+ width: 342px;  
+display:block;
+}
+
+
 </style>

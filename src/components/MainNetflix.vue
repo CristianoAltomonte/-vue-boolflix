@@ -30,4 +30,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+div{
+  background-color: rgba(27, 27, 27, 1);
+
+}
 </style>

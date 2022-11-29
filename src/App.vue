@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+
     <HeaderNetflix @emitSearchTextHeader="searchMovies" />
     <MainNetflix :arrayResultApp="filmResults"/>
   
@@ -54,9 +54,15 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
- 
-  background-color: aqua;
-  
+
+
+*{
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+
+
 </style>
