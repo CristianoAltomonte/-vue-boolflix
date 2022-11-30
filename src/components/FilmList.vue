@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div class="container-film">
     <div class="d-flex justify-content-between overflow-auto scrollbar">
       <CardNetflix
         v-for="(elem, index) in arrayResultApp"
@@ -30,8 +30,15 @@ export default {
 <style lang="scss" scoped>
 
 .scrollbar::-webkit-scrollbar {
-  display: none;
+  background-color: rgba(27, 27, 27, 1);
 }
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+}
+.container-film{
 
-
+  width: 80%;
+  margin: 0 auto;
+}
 </style>
