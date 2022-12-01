@@ -62,15 +62,18 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+::-webkit-scrollbar{
+  display: none;
+}
 #app {
   background-color: rgba(27, 27, 27, 1);
   height: 100vh;
+  overflow: auto;
 }
 </style>

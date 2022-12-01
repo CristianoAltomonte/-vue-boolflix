@@ -1,8 +1,6 @@
 <template>
   <header>
-    <div
-      class="container-header d-flex align-items-center justify-content-between"
-    >
+    <div class="container-header d-flex align-items-center justify-content-between">
       <div>
         <img src="../assets/Netflix-Logo.wine.png" alt="#" />
       </div>
@@ -17,6 +15,7 @@
           @keyup="$emit('emitSearchTextHeader', searchText)"
         />
       </div>
+
     </div>
   </header>
 </template>
