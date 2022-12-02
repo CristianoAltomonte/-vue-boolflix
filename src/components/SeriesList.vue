@@ -39,7 +39,7 @@ export default {
 
 .scrollbar::-webkit-scrollbar{
     background-color: rgba(27, 27, 27, 1);
-    height: 20px;
+    height: 10px;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {

@@ -57,7 +57,6 @@ export default {
         this.seriesResults = response.data.results;
       });
     },
-
   },
 };
 </script>
